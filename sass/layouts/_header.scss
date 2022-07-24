@@ -1,0 +1,39 @@
+
+header{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    overflow-x: hidden;
+    @include boxShadow(light);
+    background-color: $darkModeTextLightModeElements;
+
+    h1{
+        cursor: pointer;
+        &:active{
+            transform: translateY(0.2rem);
+        }
+    }
+    .mode{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            max-width: 2rem;
+        }
+        p{  margin-left: 0.5rem;
+            margin-right: 2rem;
+            white-space: nowrap;
+        }
+        &:active{
+            transform: translateY(0.2rem);
+        }
+    }
+}
+
+@include media(small){
+    header{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }}

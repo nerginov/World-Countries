@@ -1,0 +1,16 @@
+#customize__filter{
+    @include boxShadow(light);
+    width: fit-content;
+    padding:2rem 7rem 2rem 2rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('/images/angle-down-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: 16rem center;
+    background-color: $darkModeTextLightModeElements;
+    cursor: pointer;
+}

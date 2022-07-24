@@ -1,0 +1,15 @@
+#back{
+    @include boxShadow(light);
+    transform: translateY(0.4rem);
+    background-color: $darkModeTextLightModeElements;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 1rem 3rem;
+    margin-bottom: 5rem;
+    cursor:pointer;
+
+    &:active{
+        transform: translateY(0.2rem);
+    }
+}

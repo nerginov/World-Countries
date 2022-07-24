@@ -1,0 +1,28 @@
+//dark theme ---- light one is by default
+.mode-dark{
+    header{
+    background-color: $darkModeElements;
+    box-shadow: none;
+   }
+    .mode{
+        img{
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+    }
+
+    main{
+      background-color: $darkModeBackground;
+    }
+
+    p,span,a,h1,h2,#customize__search,#customize__filter,#back{
+      color:$darkModeTextLightModeElements !important; 
+    }
+
+    .country, #customize__search, #customize__filter,#back, .border-countries a{
+       background-color: $darkModeElements;
+       @include boxShadow(dark);
+    }
+
+  }
+

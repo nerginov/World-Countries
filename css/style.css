@@ -1,0 +1,293 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif; }
+
+header h1 {
+  font-weight: 800;
+  font-size: 2rem; }
+
+header .mode p {
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.app #customize__search {
+  font-size: 1.4rem;
+  color: #858585; }
+
+.app #customize__filter {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #111517; }
+
+.app .country {
+  font-size: 1.4rem; }
+  .app .country .country__data {
+    color: #111517; }
+  .app .country .country__name {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #111517; }
+  .app .country span {
+    color: #111517;
+    font-weight: 800; }
+
+.app .detailed-country #back {
+  font-size: 1.6rem;
+  color: #111517; }
+
+.app .detailed-country p {
+  font-size: 1.4rem;
+  line-height: 220%;
+  font-weight: 300; }
+
+.app .detailed-country span {
+  font-weight: 600;
+  font-size: 1.6rem; }
+
+.app .detailed-country a {
+  font-size: 1.4rem; }
+
+.app .detailed-country h1, .app .detailed-country h2, .app .detailed-country p, .app .detailed-country a, .app .detailed-country span {
+  color: #111517; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+#back {
+  box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -moz-box-shadow: 0px 1px;
+  transform: translateY(0.4rem);
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 1rem 3rem;
+  margin-bottom: 5rem;
+  cursor: pointer; }
+  #back:active {
+    transform: translateY(0.2rem); }
+
+#customize__filter {
+  box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -moz-box-shadow: 0px 1px;
+  width: fit-content;
+  padding: 2rem 7rem 2rem 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("/images/angle-down-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-position: 16rem center;
+  background-color: white;
+  cursor: pointer; }
+
+#customize__search {
+  width: 100%;
+  box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -moz-box-shadow: 0px 1px;
+  background-image: url("/images/magnifying-glass-solid.svg");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position-x: 2rem;
+  background-position-y: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2rem 5rem;
+  margin-bottom: 3rem;
+  background-color: white; }
+
+@media only screen and (min-width: 1024px) {
+  #customize__search {
+    flex-basis: 40%; } }
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 1.2rem solid #f3f3f3;
+  border-top: 1.2rem solid #3498db;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  animation: spin 2s linear infinite; }
+
+header {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  overflow-x: hidden;
+  box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -moz-box-shadow: 0px 1px;
+  background-color: white; }
+  header h1 {
+    cursor: pointer; }
+    header h1:active {
+      transform: translateY(0.2rem); }
+  header .mode {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    header .mode img {
+      max-width: 2rem; }
+    header .mode p {
+      margin-left: 0.5rem;
+      margin-right: 2rem;
+      white-space: nowrap; }
+    header .mode:active {
+      transform: translateY(0.2rem); }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding-left: 8rem;
+    padding-right: 8rem; } }
+
+main {
+  background-color: #fafafa;
+  padding: 3rem 3rem 5rem 3rem; }
+
+.hidden {
+  display: none !important; }
+
+.detailed-country {
+  width: 100%; }
+  .detailed-country img {
+    width: 100%;
+    height: 20rem; }
+  .detailed-country img, .detailed-country h1, .detailed-country h2 {
+    margin-bottom: 2rem; }
+  .detailed-country .country-data__main {
+    margin-bottom: 3rem; }
+  .detailed-country .border-countries {
+    margin-top: 3rem; }
+    .detailed-country .border-countries p {
+      display: flex;
+      flex-wrap: wrap; }
+    .detailed-country .border-countries a:not(:last-child) {
+      margin-right: 0.7rem; }
+    .detailed-country .border-countries a {
+      box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+      -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+      -moz-box-shadow: 0px 1px;
+      margin-bottom: 1rem;
+      padding: .2rem 1.2rem;
+      background: white; }
+
+@media only screen and (min-width: 768px) {
+  .app {
+    height: 100vh;
+    margin-left: 10rem;
+    margin-right: 10rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .app {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem; }
+  .detailed-country .country-data {
+    display: grid;
+    grid-template-columns: 0.8fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 7rem; }
+    .detailed-country .country-data img {
+      height: 40rem; }
+    .detailed-country .country-data__main {
+      grid-row: 1;
+      grid-column: 2/3;
+      margin-top: 3rem; }
+    .detailed-country .country-data__secondary {
+      grid-row: 1;
+      grid-column: 3/4;
+      margin-top: 6rem; }
+    .detailed-country .country-data .border-countries {
+      grid-row: 1;
+      grid-column: 2/4;
+      align-self: flex-end;
+      margin-bottom: 3rem; }
+      .detailed-country .country-data .border-countries h2 {
+        white-space: nowrap;
+        margin-right: 1rem; }
+      .detailed-country .country-data .border-countries .container {
+        display: block; }
+        .detailed-country .country-data .border-countries .container a {
+          display: inline-block;
+          margin-bottom: 1rem;
+          cursor: pointer; } }
+
+.country {
+  padding-bottom: 2rem;
+  background-color: white;
+  opacity: transperant;
+  box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(133, 133, 133, 0.51);
+  -moz-box-shadow: 0px 1px;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  cursor: pointer; }
+  .country:active {
+    transform: translateY(0.4rem); }
+  .country img {
+    height: 20rem;
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem; }
+  .country .country__data {
+    margin: 2rem 2rem 0rem 2rem; }
+    .country .country__data p:not(:last-child) {
+      margin-bottom: 0.7rem; }
+    .country .country__data .country__name {
+      margin-bottom: 2rem; }
+
+@media only screen and (min-width: 1024px) {
+  main .countries-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 27rem);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem; }
+  main .app .customize {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; } }
+
+.mode-dark header {
+  background-color: #2b3945;
+  box-shadow: none; }
+
+.mode-dark .mode img {
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1); }
+
+.mode-dark main {
+  background-color: #202c37; }
+
+.mode-dark p, .mode-dark span, .mode-dark a, .mode-dark h1, .mode-dark h2, .mode-dark #customize__search, .mode-dark #customize__filter, .mode-dark #back {
+  color: white !important; }
+
+.mode-dark .country, .mode-dark #customize__search, .mode-dark #customize__filter, .mode-dark #back, .mode-dark .border-countries a {
+  background-color: #2b3945;
+  box-shadow: 0px 1px 11px -2px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 0px 1px 11px -2px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 1px 11px -2px rgba(0, 0, 0, 0.51); }

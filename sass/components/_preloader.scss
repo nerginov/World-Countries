@@ -1,0 +1,9 @@
+.preloader{
+      @include absolute-center(both);
+      border: 1.2rem solid #f3f3f3;
+      border-top: 1.2rem solid #3498db;
+      border-radius: 50%;
+      height: 6rem;
+      width: 6rem;
+      animation: spin 2s linear infinite;
+  }
