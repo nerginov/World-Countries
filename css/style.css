@@ -165,7 +165,12 @@ header {
 
 main {
   background-color: #fafafa;
-  padding: 3rem 3rem 5rem 3rem; }
+  padding: 3rem 3rem 5rem 3rem; 
+  overflow-y:auto;
+    
+  &::-webkit-scrollbar{
+      display: none;
+  }}
 
 .hidden {
   display: none !important; }
