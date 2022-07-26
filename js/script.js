@@ -80,7 +80,7 @@ appContainer.append(countriesContainer)
      <img src= ${country.flags.png ?? 'undefined'} alt="" class="country__flag">
      <div class='country__data'>
      <h2 class="country__name">${country.name.common ?? 'undefined'}</h2>
-     <p class="country__population"><span>Population:</span> ${country.population ?? 'undefined'}</p>
+     <p class="country__population"><span>Population:</span> ${country.population.toLocaleString('en-US') ?? 'undefined'}</p>
      <p class="country__region"><span>Region:</span> ${country.region ?? 'undefined'}</p>
      <p class="country__capital"><span>Capital:</span> ${country.capital ?? 'undefined'}</p></div>`
      countriesContainer.append(div)
@@ -115,7 +115,7 @@ const displayDetailedCountry = function(country){
     <div class='country-data__main'>
     <h1>${country.name.common ?? 'undefined'}</h1>
     <p><span>Nativ Name: </span>${Object.values(country.name.nativeName ?? {official:'undefined'})[0].official}</p>
-    <p><span>Population: </span>${country.population ?? 'undefined'}</p>
+    <p><span>Population: </span>${country.population.toLocaleString('en-US') ?? 'undefined'}</p>
     <p><span>Region: </span>${country.region ?? 'undefined'}</p>
     <p><span>Sub Region: </span>${country.subregion ?? 'undefined'}</p>
     <p><span>Capital: </span>${country.capital ?? 'undefined'}</p>
