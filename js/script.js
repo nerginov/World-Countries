@@ -317,7 +317,7 @@ const loadCountries = function () {
 //Function to handle popstate and update UI
 const handlePopState = function () {
   // Get the current URL path
-  const locationPath = location.pathname;
+  const locationPath = decodeURIComponent(location.pathname); //decoding country names with special characters in URLs
 
   // Check if the current URL path is not the homepage
   if (locationPath !== "/World-Countries/") {
