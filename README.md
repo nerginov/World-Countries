@@ -2,6 +2,14 @@
 
 World-Countries is designed to offer users a seamless experience in exploring various countries and their attributes. The application presents a user-friendly interface where users can easily navigate through countries, search for specific countries, and filter them by region. Each country is displayed with key information such as population, region, capital, and flag.
 
+## Screenshots
+
+![App Screenshot](images/webpage-screenshot.jpg)
+
+## Live Site
+
+[World-Countries Live Site](https://nerginov.github.io/World-Countries/)
+
 ## Features
 
 - **Detailed Country Information**: Users can view detailed information about each country, including its native name, population, region, sub-region, capital, top-level domain, currencies, languages, and bordering countries.
